@@ -1,0 +1,8 @@
+{
+  "appname": "Rent Ready",
+  "defaultErrorMessage": "Something went wrong",
+  "done": "Done",
+  "success": "Success",
+  "notice": "Notice",
+  "failed": "Failed"
+}
