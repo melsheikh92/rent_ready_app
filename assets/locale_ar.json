@@ -1,4 +1,17 @@
 {
-  "defaultErrorMessage": "Something went wrong",
-  "done": "Done"
+  "app_name": "Rent Ready",
+  "defaultErrorMessage": "هناك خطأ ما",
+  "done": "تم",
+  "success": "عمل ناجح",
+  "notice": "انتبه",
+  "failed": "فشل",
+  "account_details_title": "حدد الحساب لإظهار التفاصيل",
+  "account_details_state": "ولاية",
+  "account_details_state_code": "رمز الولاية",
+  "account_details_address": "العنوان",
+  "account_details_website": "موقع إلكتروني",
+  "account_details_email": "بريد الالكتروني",
+  "account_details_revenue": "دخل",
+  "account_details_city": "مدينة",
+  "account_details_accountNumber": "رقم حساب"
 }

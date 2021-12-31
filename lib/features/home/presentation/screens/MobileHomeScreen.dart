@@ -44,7 +44,7 @@ class _HomeScreenState extends State<MobileHomeScreen> {
   AppBar _buildAppBar(AccountsLoadedState state) {
     return AppBar(
       title: Text(
-        AppStrings.appname,
+        AppStrings.appName,
         style: Theme.of(context).textTheme.headline1,
       ),
       bottom: PreferredSize(

@@ -7,9 +7,9 @@ import 'package:flutter/material.dart';
     
 class AppSVGAssets {
 
-    static const success = "success";
+    static const noticeIcon = "notice_icon";
 static const error = "error";
-static const noticeIcon = "notice_icon";
+static const success = "success";
 
 
 

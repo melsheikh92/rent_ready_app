@@ -22,6 +22,7 @@ dependencies:
   split_view: ^3.1.0
 description: A new Flutter application.
 dev_dependencies:
+  bloc_test: ^7.1.0
   build_runner: null
   flutter_test:
     sdk: flutter
@@ -29,19 +30,17 @@ dev_dependencies:
   lint: ^1.1.1
   mockito: ^4.1.1
   retrofit_generator: ^1.3.8+1
-  bloc_test: ^7.1.0
-
 environment:
   sdk: '>=2.8.4 <3.0.0'
 flutter:
   assets:
-  - assets/images/logo.png
-  - assets/svg_images/light/ar/
-  - config/
-  - assets/svg_images/light/en/
-  - assets/
-  - assets/svg_images/dark/ar/
   - assets/svg_images/dark/en/
+  - assets/svg_images/light/ar/
+  - assets/svg_images/dark/ar/
+  - assets/svg_images/light/en/
+  - assets/images/logo.png
+  - assets/
+  - config/
   fonts:
   - family: Poppins
     fonts:

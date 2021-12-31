@@ -1,8 +1,17 @@
 {
-  "appname": "Rent Ready",
+  "app_name": "Rent Ready",
   "defaultErrorMessage": "Something went wrong",
   "done": "Done",
   "success": "Success",
   "notice": "Notice",
-  "failed": "Failed"
+  "failed": "Failed",
+  "account_details_title": "Select account to show details",
+  "account_details_state": "State",
+  "account_details_state_code": "State code",
+  "account_details_address": "Address",
+  "account_details_website": "Website",
+  "account_details_email": "Email",
+  "account_details_revenue": "Revenue",
+  "account_details_city": "City",
+  "account_details_accountNumber": "Account number"
 }

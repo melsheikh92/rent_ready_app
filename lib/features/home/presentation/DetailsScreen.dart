@@ -14,7 +14,7 @@ class DetailsScreen extends StatelessWidget {
       child: _accountModel == null
           ? Center(
               child: Text(
-                "Select account to show details",
+                AppStrings.accountDetailsTitle,
                 style: Theme.of(context).textTheme.headline3,
               ),
             )
@@ -31,57 +31,57 @@ class DetailsScreen extends StatelessWidget {
                   ),
                   _buildRow(
                       context: context,
-                      title: "State",
+                      title: AppStrings.accountDetailsState,
                       details: _accountModel.address1StateOrProvince),
                   SizedBox(
                     height: 8,
                   ),
                   _buildRow(
                       context: context,
-                      title: "State code",
+                      title: AppStrings.accountDetailsStateCode,
                       details: _accountModel.stateCode.toString()),
                   SizedBox(
                     height: 8,
                   ),
                   _buildRow(
                       context: context,
-                      title: "Account number",
+                      title: AppStrings.accountDetailsAccountnumber,
                       details: _accountModel.accountNumber),
                   SizedBox(
                     height: 8,
                   ),
                   _buildRow(
                       context: context,
-                      title: "Address",
+                      title: AppStrings.accountDetailsAddress,
                       details: _accountModel.address1Line1),
-                SizedBox(
-                  height: 8,
-                ),
-                _buildRow(
-                    context: context,
-                    title: "City",
-                    details: _accountModel.addressCity),
-                SizedBox(
-                  height: 8,
-                ),
-                _buildRow(
-                    context: context,
-                    title: "Website",
-                    details: _accountModel.website),
-                SizedBox(
-                  height: 8,
-                ),
-                _buildRow(
-                    context: context,
-                    title: "Email",
-                    details: _accountModel.email),
-                SizedBox(
-                  height: 8,
-                ),
-                _buildRow(
-                    context: context,
-                    title: "Revenue",
-                    details: (_accountModel.revenue ?? "-").toString()),
+                  SizedBox(
+                    height: 8,
+                  ),
+                  _buildRow(
+                      context: context,
+                      title: AppStrings.accountDetailsCity,
+                      details: _accountModel.addressCity),
+                  SizedBox(
+                    height: 8,
+                  ),
+                  _buildRow(
+                      context: context,
+                      title: AppStrings.accountDetailsWebsite,
+                      details: _accountModel.website),
+                  SizedBox(
+                    height: 8,
+                  ),
+                  _buildRow(
+                      context: context,
+                      title: AppStrings.accountDetailsEmail,
+                      details: _accountModel.email),
+                  SizedBox(
+                    height: 8,
+                  ),
+                  _buildRow(
+                      context: context,
+                      title: AppStrings.accountDetailsRevenue,
+                      details: (_accountModel.revenue ?? "-").toString()),
                 ]),
     );
   }
