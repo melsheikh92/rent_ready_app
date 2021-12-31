@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:rent_ready_app/features/settings/bloc/events/SettingsEvent.dart';
 import 'package:rent_ready_app/features/settings/bloc/states/ThemeState.dart';
+import 'package:rent_ready_app/resources/strings_generated.dart';
 import 'package:rent_ready_app/utilities/navigator_key.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'core/base/app/ConfigReader.dart';
@@ -50,7 +51,7 @@ class _MyAppState extends State<MyApp> {
       theme: state.settingsConfigModel.lightTheme,
       darkTheme: state.settingsConfigModel.darkTheme,
       themeMode: state.settingsConfigModel.themeMode,
-      title: 'Rent Ready',
+      title: AppStrings.appName,
       debugShowCheckedModeBanner: false,
       locale: Locale(state.settingsConfigModel.lang) ?? allTranslations.locale,
       localizationsDelegates: const [

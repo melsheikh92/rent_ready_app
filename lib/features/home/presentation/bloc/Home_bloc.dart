@@ -83,7 +83,7 @@ class UIAccountModel extends Equatable {
   String website;
   String addressCity;
   int revenue;
-
+  UIAccountModel.init();
   UIAccountModel.from(AccountModel accountModel) {
     name = accountModel.name;
     image = accountModel.image;
