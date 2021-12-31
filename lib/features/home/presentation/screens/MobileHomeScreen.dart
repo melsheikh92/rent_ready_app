@@ -125,7 +125,7 @@ class _HomeScreenState extends State<MobileHomeScreen> {
                           Scaffold(
                             appBar: AppBar(title: Text(AppStrings.appName, style: Theme.of(context).textTheme.headline1,),
                             leading: InkWell(
-                              child: Icon(Icons.arrow_back, size: 25),
+                              child: Icon(Icons.arrow_back, size: 25, color: Theme.of(context).iconTheme.color,),
                               onTap: () {
                               Navigator.of(context).pop();
                             },),
