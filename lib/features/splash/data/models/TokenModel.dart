@@ -6,6 +6,7 @@ class TokenModel {
   int extExpiresIn;
   String accessToken;
 
+  TokenModel({this.accessToken, this.tokenType, this.extExpiresIn, this.expiresIn});
   TokenModel.fromJson(Map<String, dynamic> json) {
     tokenType = json['token_type'];
     expiresIn = json['expires_in'];
