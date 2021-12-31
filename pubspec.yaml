@@ -34,13 +34,13 @@ environment:
   sdk: '>=2.8.4 <3.0.0'
 flutter:
   assets:
-  - assets/svg_images/dark/en/
+  - config/
   - assets/svg_images/light/ar/
-  - assets/svg_images/dark/ar/
   - assets/svg_images/light/en/
   - assets/images/logo.png
+  - assets/svg_images/dark/en/
   - assets/
-  - config/
+  - assets/svg_images/dark/ar/
   fonts:
   - family: Poppins
     fonts:

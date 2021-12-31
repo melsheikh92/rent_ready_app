@@ -43,7 +43,7 @@ class FiltersWidget extends StatelessWidget {
               },
               decoration: InputDecoration(
                 fillColor: Colors.greenAccent.withOpacity(0.3),
-                hintText: 'Search',
+                hintText: AppStrings.search,
                 contentPadding: EdgeInsets.all(16),
                 suffixIcon: Icon(Icons.search,
                     color: Theme.of(context).iconTheme.color),

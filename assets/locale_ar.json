@@ -13,5 +13,10 @@
   "account_details_email": "بريد الالكتروني",
   "account_details_revenue": "دخل",
   "account_details_city": "مدينة",
-  "account_details_accountNumber": "رقم حساب"
+  "account_details_accountNumber": "رقم حساب",
+  "settings_light_theme": "موضوع فاتح",
+  "settings_dark_theme": "مظهر داكن",
+  "settings_change_language": "تغيير اللغة",
+  "search": "بحث"
+
 }

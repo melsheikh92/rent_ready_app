@@ -15,4 +15,8 @@ static String get accountDetailsEmail{return allTranslations.text("account_detai
 static String get accountDetailsRevenue{return allTranslations.text("account_details_revenue");}
 static String get accountDetailsCity{return allTranslations.text("account_details_city");}
 static String get accountDetailsAccountnumber{return allTranslations.text("account_details_accountNumber");}
+static String get settingsLightTheme{return allTranslations.text("settings_light_theme");}
+static String get settingsDarkTheme{return allTranslations.text("settings_dark_theme");}
+static String get settingsChangeLanguage{return allTranslations.text("settings_change_language");}
+static String get search{return allTranslations.text("search");}
 }

@@ -13,5 +13,9 @@
   "account_details_email": "Email",
   "account_details_revenue": "Revenue",
   "account_details_city": "City",
-  "account_details_accountNumber": "Account number"
+  "account_details_accountNumber": "Account number",
+  "settings_light_theme": "Light theme",
+  "settings_dark_theme": "Dark theme",
+  "settings_change_language": "change language",
+  "search": "Search"
 }

@@ -4,7 +4,10 @@ import 'package:rent_ready_app/features/home/presentation/bloc/Home_event.dart';
 import 'package:rent_ready_app/features/home/presentation/bloc/Home_state.dart';
 import 'package:rent_ready_app/features/home/presentation/widgets/FiltersWidget.dart';
 import 'package:rent_ready_app/features/home/presentation/widgets/ItemWidget.dart';
+import 'package:rent_ready_app/features/settings/bloc/SettingsConfigBloc.dart';
+import 'package:rent_ready_app/features/settings/bloc/events/ThemeEvent.dart';
 import 'package:rent_ready_app/utilities/common_imports.dart';
+import 'package:rent_ready_app/utilities/language_manager.dart';
 import 'package:split_view/split_view.dart';
 
 import '../DetailsScreen.dart';
@@ -53,7 +56,7 @@ class _HomeScreenState extends State<TabletHomeScreen> {
         indicator: SplitIndicator(viewMode: SplitViewMode.Horizontal),
         activeIndicator: SplitIndicator(
           viewMode: SplitViewMode.Vertical,
-          color: Colors.white,
+          color: Theme.of(context).cardColor,
           isActive: true,
         ),
         controller: SplitViewController(
@@ -69,6 +72,53 @@ class _HomeScreenState extends State<TabletHomeScreen> {
         AppStrings.appName,
         style: Theme.of(context).textTheme.headline1,
       ),
+        actions: [
+          Padding(padding: EdgeInsets.all(8),
+          child: PopupMenuButton(
+              onSelected: (txt) {
+                if (txt == "LIGHT_THEME") {
+                  BlocProvider.of<SettingsConfigBloc>(context)
+                      .add(ThemeModeChangedEvent(themeMode: ThemeMode.light));
+                }
+                if (txt == "DARK_THEME") {
+                  BlocProvider.of<SettingsConfigBloc>(context)
+                      .add(ThemeModeChangedEvent(themeMode: ThemeMode.dark));
+                }
+                if (txt == "LANGUAGE") {
+                  var manager = getIt<LanguageManager>();
+                  manager.changeLanguage(context);
+                }
+              },
+              child: Icon(
+                Icons.settings,
+                color: Theme.of(context).iconTheme.color,
+                size: 30,
+              ),
+              itemBuilder: (context) => [
+                PopupMenuItem(
+                  child: Text(
+                    AppStrings.settingsLightTheme,
+                    style: Theme.of(context).textTheme.bodyText1,
+                  ),
+                  value: "LIGHT_THEME",
+                ),
+                PopupMenuItem(
+                  child: Text(
+                    AppStrings.settingsDarkTheme,
+                    style: Theme.of(context).textTheme.bodyText1,
+                  ),
+                  value: "DARK_THEME",
+                ),
+                PopupMenuItem(
+                  child: Text(
+                    AppStrings.settingsChangeLanguage,
+                    style: Theme.of(context).textTheme.bodyText1,
+                  ),
+                  value: "LANGUAGE",
+                )
+              ]),
+          )
+        ],
       bottom: PreferredSize(
         preferredSize: Size.fromHeight(80),
         child: FiltersWidget(

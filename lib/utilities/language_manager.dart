@@ -48,9 +48,10 @@ class LanguageManager {
     final String localeString = await getPreferredLanguage();
     return localeString == "en" ? _englishLocale : _arabicLocale;
   }
-}
 
-void changeLanguage(BuildContext context) {
-  final String lang = getIt<LanguageManager>().isEnglish?"ar":"en";
-  BlocProvider.of<SettingsConfigBloc>(context).add(LanguageChangedEvent(lang:lang));
+  void changeLanguage(BuildContext context) {
+    final String lang = getIt<LanguageManager>().isEnglish?"ar":"en";
+    BlocProvider.of<SettingsConfigBloc>(context).add(LanguageChangedEvent(lang:lang));
+  }
+
 }
