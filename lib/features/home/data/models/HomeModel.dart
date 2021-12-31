@@ -20,7 +20,7 @@ class AccountModel {
   String emailaddress1;
   String websiteurl;
   String address1City;
-  int revenue;
+  dynamic revenue;
 
   AccountModel(
       {this.name,

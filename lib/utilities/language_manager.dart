@@ -50,7 +50,8 @@ class LanguageManager {
   }
 
   void changeLanguage(BuildContext context) {
-    final String lang = getIt<LanguageManager>().isEnglish?"ar":"en";
+    final String lang = isEnglish ? "ar" : "en";
+    _selectedLanguage = lang;
     BlocProvider.of<SettingsConfigBloc>(context).add(LanguageChangedEvent(lang:lang));
   }
 

@@ -58,7 +58,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
 
       filteredAccounts.removeWhere((element) {
         var name = element.name.toLowerCase();
-        var searchText = filters.searchText.toLowerCase();
+        var searchText = (filters.searchText?? "").toLowerCase();
         return !name.contains(searchText);
       });
       selectedAccount = null;
@@ -82,7 +82,7 @@ class UIAccountModel extends Equatable {
   String email;
   String website;
   String addressCity;
-  int revenue;
+  dynamic revenue;
   UIAccountModel.init();
   UIAccountModel.from(AccountModel accountModel) {
     name = accountModel.name;

@@ -96,10 +96,12 @@ class DetailsScreen extends StatelessWidget {
         SizedBox(
           width: 20,
         ),
-        Text(
+        Expanded(
+            child: Text(
           details ?? "-",
           style: Theme.of(context).textTheme.headline5,
-        )
+          overflow: TextOverflow.ellipsis,
+        ))
       ],
     );
   }

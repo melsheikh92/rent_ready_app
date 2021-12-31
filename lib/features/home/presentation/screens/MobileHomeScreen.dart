@@ -112,7 +112,7 @@ class _HomeScreenState extends State<MobileHomeScreen> {
   Widget _buildBody(AccountsLoadedState state) {
     return GridView(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: state.filters.isGrid ? 3 : 1),
+            crossAxisCount: state.filters.isGrid ? 2 : 1),
         children: state.accounts
             .map((e) => ItemWidget(
                 account: e,
