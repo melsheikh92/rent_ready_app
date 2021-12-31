@@ -14,7 +14,6 @@ import 'features/settings/bloc/SettingsConfigBloc.dart';
 import 'di/InjectionContainer.dart' as di;
 import 'features/splash/presentation/screens/SplashScreen.dart';
 
-
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initialize();
@@ -30,7 +29,7 @@ Future<void> main() async {
 
 Future initialize() async {
   await ConfigReader.initialize();
-  await di.configure(environment: "dev");
+  await di.configure(environment: BuildEnvironment.dev.name);
 }
 
 class MyApp extends StatefulWidget {
@@ -45,6 +44,7 @@ class _MyAppState extends State<MyApp> {
       builder: _buildThemeBuilder,
     );
   }
+
   Widget _buildThemeBuilder(BuildContext context, SettingsState state) {
     return MaterialApp(
       navigatorKey: navigatorKey,
@@ -67,3 +67,16 @@ class _MyAppState extends State<MyApp> {
 }
 
 enum BuildEnvironment { dev, prod }
+
+extension BuildEnvironmentEx on BuildEnvironment {
+  String get name {
+    switch (this) {
+      case BuildEnvironment.dev:
+        return 'dev';
+      case BuildEnvironment.prod:
+        return 'prod';
+      default:
+        return 'dev';
+    }
+  }
+}
