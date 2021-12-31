@@ -9,6 +9,7 @@ dependencies:
   flutter_bloc: ^6.1.3
   flutter_localizations:
     sdk: flutter
+  flutter_microsoft_authentication: ^0.1.1
   flutter_svg: ^0.19.3
   get_it: ^6.0.0
   http: ^0.12.2
@@ -41,6 +42,7 @@ flutter:
   - assets/images/logo.png
   - assets/
   - config/
+  - assets/auth_config.json
   fonts:
   - family: Poppins
     fonts:

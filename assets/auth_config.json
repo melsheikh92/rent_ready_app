@@ -1,0 +1,17 @@
+{
+  "client_id": "ebfcc7eb-ee76-480a-8c16-c908fe5df47f",
+  "authorization_user_agent": "DEFAULT",
+  "redirect_uri": "msauth://com.mahmoud.rent_ready_app/2jmj7l5rSw0yVb%2FvlWAYkK%2FYBwk%3D",
+  "account_mode": "SINGLE",
+  "broker_redirect_uri_registered": true,
+  "shared_device_mode_supported": true,
+  "authorities": [
+    {
+      "type": "AAD",
+      "audience": {
+        "type": "AzureADMyOrg",
+        "tenant_id": "0fcd2810-9edc-41c4-be92-6c6d78468e7a"
+      }
+    }
+  ]
+}
