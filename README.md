@@ -76,14 +76,14 @@ Using multiple techniques
  
  # Docker 
 Using Docker file step by step:
- 4. Pull debian:latest image.
- 5. Install apt packages to use them in download and install flutter SDK.
- 6. Download Flutter SDK.
- 7. Setup the PATH.
- 8. Copy the aplication to the container.
- 9. Build flutter web.
- 10. Install the server image nginx.
- 11. Copy the build web directory to the server path.
+ 1. Pull debian:latest image.
+ 2. Install apt packages to use them in download and install flutter SDK.
+ 3. Download Flutter SDK.
+ 4. Setup the PATH.
+ 5. Copy the aplication to the container.
+ 6. Build flutter web.
+ 7. Install the server image nginx.
+ 8. Copy the build web directory to the server path.
  
  
 building the container via docker command build
