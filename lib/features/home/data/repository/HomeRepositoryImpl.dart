@@ -20,9 +20,9 @@ class HomeRepositoryImpl implements HomeRepository {
       final response =
       await remoteDataSource.getAccountsData(query);
       return right(response);
-    } on ServerException catch (error) {
+    } on Exception catch (error) {
       return left(
-          ServerFailure(statusCode: error.statusCode, message: error.message));
+          ServerFailure(statusCode: "403", message: "Something went wrong"));
     }
   }
 }
