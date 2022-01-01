@@ -34,6 +34,6 @@ python3 assets/assets-build.py
 ## Generate new feature
 From terminal you can generate the whole feature architecture(Presentation-Domain-Data) by providing a name for the new feature.
 
-```bas
+```bash
 python3 assets/build-new-feature.py
 ```
