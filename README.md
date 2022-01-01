@@ -26,7 +26,7 @@ we use [Injectable](https://pub.dev/packages/injectable) to handle dependency in
 flutter packages pub run build_runner build --delete-conflicting-outputs
 ```
 ## Generate assets
-Under the assets folder, there is assets-build.py script that generates 2 dart files under lib/resources folder for Images and Strings, that mimics R class on Android.
+Under the assets folder, there is assets-build.py script that generates dart files under lib/resources folder for Images and Strings, that mimics R class on Android.
 
 ```bash
 python3 assets/assets-build.py
