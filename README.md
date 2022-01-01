@@ -46,6 +46,7 @@ To connect to Microsoft APIs, define the variant as prod.
  - Presentation layer (bloc pattern using [flutter_bloc](https://pub.dev/packages/flutter_bloc))
  - Domain layer
  - Data layer
+ 
  ![enter image description here](https://github.com/melsheikh92/rent_ready_app/blob/master/ReadMeAssets/feature.png?raw=true)
  ## Responsive design
 I realy on handling master-details screen based on the screen size if tablet or web it will open as SplitView but for mobile master screen being handled as list/grid or accounts and when one is selected it opens on another screen used [split_view](https://pub.dev/packages/split_view) to handle it.
