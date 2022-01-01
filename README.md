@@ -37,18 +37,18 @@ From terminal you can generate the whole feature architecture(Presentation-Domai
 ```bash
 python3 assets/build-new-feature.py
 ```
-## Multi Variants
+# Multi Variants
 Relying on Injectable, I defined Dio object based on the variant (dev/prod).
 I inject it on the run method by default as a dev, so It will return the responses from the MockAdapter which will return mocks inside the application.
 To connect to Microsoft APIs, define the variant as prod.
-## Clean Architecture 
+# Clean Architecture 
 
  - Presentation layer (bloc pattern using [flutter_bloc](https://pub.dev/packages/flutter_bloc))
  - Domain layer
  - Data layer
  
  ![enter image description here](https://github.com/melsheikh92/rent_ready_app/blob/master/ReadMeAssets/feature.png?raw=true)
- ## Responsive design
+ # Responsive design
 I realy on handling master-details screen based on the screen size if tablet or web it will open as SplitView but for mobile master screen being handled as list/grid or accounts and when one is selected it opens on another screen used [split_view](https://pub.dev/packages/split_view) to handle it.
 Both Mobile or tablet/web are relying on the same bloc to provide the state for them but behaves differently based on the device screen size.
 |  ![enter image description here](https://github.com/melsheikh92/rent_ready_app/blob/master/ReadMeAssets/mobile.png?raw=true)|  ![enter image description here](https://github.com/melsheikh92/rent_ready_app/blob/master/ReadMeAssets/web_tablet.png?raw=true)|
@@ -59,7 +59,7 @@ Relying on bloc, I started from Material app with Settings Bloc provider to be a
 |  ![enter image description here](https://github.com/melsheikh92/rent_ready_app/blob/master/ReadMeAssets/mobile_light.png?raw=true)|  ![enter image description here](https://github.com/melsheikh92/rent_ready_app/blob/master/ReadMeAssets/mobile_dark.png?raw=true)|
 |--|--|
 
-## Multi-Languages
+# Multi-Languages
 Relying on bloc, I started from Material app with Settings Bloc provider to be able to handle the global settings changes like change language on real-time.
 
 > I added 2 languages for now English and Arabic.
@@ -67,14 +67,14 @@ Relying on bloc, I started from Material app with Settings Bloc provider to be a
 |  ![enter image description here](https://github.com/melsheikh92/rent_ready_app/blob/master/ReadMeAssets/mobile_light.png?raw=true)|  ![enter image description here](https://github.com/melsheikh92/rent_ready_app/blob/master/ReadMeAssets/mobile_ar.png?raw=true)|
 |--|--|
 
-## Testing
+# Testing
 
 Using multiple techniques
  1. [Mockito](https://pub.dev/packages/mockito) for injecting specific reponses from the repository.
  2. [bloc_test](https://pub.dev/packages/bloc_test) for testing the returned states after emitting specific events to the bloc.
  3. [Dart test](https://pub.dev/packages/test) for testing widgets and components.
  
- ## Docker 
+ # Docker 
 Using Docker file step by step:
  4. Pull debian:latest image.
  5. Install apt packages to use them in download and install flutter SDK.
@@ -92,7 +92,7 @@ building the container via docker command build
 starting the container on port 1111:80
 
     docker run -p 1111:80 --name rentready
-## Networking
+# Networking
 Mainly we have 2 APIs 
 
  1. Microsoft token API
