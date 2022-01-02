@@ -19,9 +19,9 @@ abstract class AppModule {
   Dio dioProd(SharedPreferences sharedPreferences, AppConfig appConfig) {
     final dio = Dio(BaseOptions(
         baseUrl: appConfig.getBaseUrl(),
-        connectTimeout: 20000,
-        receiveTimeout: 4000,
-        sendTimeout: 4000,
+        connectTimeout: 120000,
+        receiveTimeout: 120000,
+        sendTimeout: 120000,
         headers: {}));
 
     dio.interceptors

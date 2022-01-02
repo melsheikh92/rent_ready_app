@@ -37,11 +37,10 @@ class SplashBloc extends Bloc<SplashEvent, SplashState> {
           Dio dio = getIt<Dio>();
           dio.options = BaseOptions(headers: {
             'Authorization': 'Bearer ${r.accessToken}',
-            'Content-Type': 'application/json',
             'charset': 'utf-8',
-            'Accept': 'application/json',
-            'OData-MaxVersion': 4,
-            'OData-Version': 4
+            'Accept': '*/*',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Connection': 'keep-alive',
           });
           return TokenLoadedState(tokenModel: r);
         });

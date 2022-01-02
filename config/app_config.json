@@ -1,8 +1,8 @@
 {
   "baseUrl": "https://org2c9fce96.api.crm4.dynamics.com/api/data/v9.2/",
   "tenantId": "0fcd2810-9edc-41c4-be92-6c6d78468e7a",
-  "clientId": "ebfcc7eb-ee76-480a-8c16-c908fe5df47f",
-  "clientSecret": "LUP7Q~fXgLaJjpRNcaxNXn3xQipT4iSeaYixL",
+  "clientId": "29ec3b88-7754-4172-be1d-19208668f97b",
+  "clientSecret": "osZ7Q~~ODCqQYz2XzWm.~JxK4kJYBvwEjVY2J",
   "scope": "https://org2c9fce96.api.crm4.dynamics.com/.default",
   "grantType": "client_credentials"
 }
