@@ -100,8 +100,7 @@ Mainly we have 2 APIs
  
  On splash screen I call the token API to get the token after splash animation.
 To generate the token i built an applicationa and generated secret key to loggin using it via [OAuth 2.0](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow).
-I created scope URI in order to be able to define the access to the application.
-I gave permission to the application and gave the user the permission as admin to be Dynamics CRM app.
-I assigned the client secret to the scope to be able to access the application data.
+
+Following the this [tutorial](https://docs.microsoft.com/en-us/learn/modules/common-data-service-web-api/2-authenticate) to give the application required permissions to be accessable via APIs.
 
 When API returns with Access token, I embed it on Dio headers on order to start calling the second API.
